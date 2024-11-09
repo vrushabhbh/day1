@@ -1,0 +1,13 @@
+<script>
+    'use strict'
+    var amount = 150000;
+    var roi = 7.10;
+    var obal = 0;
+    for (var i = 1; i <= 15; i++) {
+        var intrest = (obal + amount) * roi / 100;
+        var closebal = obal + amount + intrest;
+        console.log(i, intrest, closebal);
+        obal = closebal;
+    }
+
+</script>

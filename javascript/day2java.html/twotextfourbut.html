@@ -1,0 +1,46 @@
+<div id="z1">enter the num1:<input type="text" id="d1">
+enter the num2<input type="text" id="d2">
+<button id="x1"> + </button>
+<button id="x2"> - </button>
+<button id="x3"> * </button>
+<button id="x4"> / </button>
+<p id="result"></p>
+
+</div>
+<script>
+
+// document.getElementById('x1').addEventListener('click', function(){
+
+// document.getElementById('result').innerHTML = Number(document.getElementById('d1').value) + Number(document.getElementById('d2').value);
+
+// })
+
+
+document.getElementById('x1').onclick=function(){
+    var data1=document.getElementById('d1').value;
+    var data2=document.getElementById('d2').value;
+    var a=Number(data1)+Number(data2);
+  document.getElementById('result').innerHTML=a;
+}
+    document.getElementById('x2').onclick = function () {
+        var data1 = document.getElementById('d1').value;
+        var data2 = document.getElementById('d2').value;
+        var b= Number(data1) - Number(data2);
+        document.getElementById('result').innerHTML = b;
+    }
+    document.getElementById('x3').onclick = function () {
+            var data1 = document.getElementById('d1').value;
+            var data2 = document.getElementById('d2').value;
+            var  c= Number(data1) * Number(data2);
+            document.getElementById('result').innerHTML = c;
+        }
+        document.getElementById('x4').onclick = function () {
+                var data1 = document.getElementById('d1').value;
+                var data2 = document.getElementById('d2').value;
+                var d = Number(data1) / Number(data2);
+                document.getElementById('result').innerHTML = d;
+            }
+
+
+
+</script>

@@ -1,0 +1,45 @@
+<script>
+    var product = [
+        {
+            name: "puma", price: 1000,
+            size: ["xl", "xxl"],
+            path: "https://levi.in/cdn/shop/files/A83580003_02_StyleShot.jpg?v=1720614500&width=750"
+        }, {
+            name: "Nike", price: 2000,
+            size: ["xl", "xxl"],
+            path: "https://levi.in/cdn/shop/files/879700127_06_Style_700716b1-7be3-48f1-bba8-0730cfce5f47.jpg?v=1713508102&width=750"
+        }, {
+            name: "puma", price: 800,
+            size: ["xl", "xxl"],
+            path: "https://levi.in/cdn/shop/files/A78040017_01_Elevated.jpg?v=1723375171&width=750"
+        }
+    ]
+    console.log(product);
+
+
+    for (var x of product) {
+        document.write(`<div>
+    <img src= "${x.path}" alt="">
+    <h2> ${x.price}</h2>
+    <p> ${x.name}</p>
+</div>`)
+        console.log(x)
+
+    }
+</script>
+<style>
+    div {
+    
+        text-align: center;
+        border: 10px red solid;
+        border-radius: 40px;
+         margin-left: 50px;
+    }
+    img{
+        height: 400px;
+        width: 300px;
+        padding: 40px 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+</style>
